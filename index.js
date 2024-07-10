@@ -117,6 +117,8 @@ app.get("/info/", (req, res) => {
   );
 });
 
+app.use(express.static('dist'))
+
 app.use(unknownEndpoint);
 
 app.listen(PORT, () => {
